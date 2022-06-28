@@ -1,0 +1,133 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_currentAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "currentAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_func_proxy_storage",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "set_func_proxy_storage",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_currentAddress",
+						"type": "address"
+					}
+				],
+				"name": "upgrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"20_proxyContracts/proxyFunc.sol": "ProxyFunc"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"20_proxyContracts/proxyFunc.sol": {
+			"keccak256": "0x57c5ce59500fc4d2361ac2e4f7739c040fe66af8566cbc44e0e5aefb56235dcd",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c944e7b756d66492e4970e0aec64c0ed9e198a98a2d4b8118c9d7a0bdae300b2",
+				"dweb:/ipfs/QmZpMkGDSxELYDoiUpchHRmDA2pLXrZYh8USCnCrAx4eQE"
+			]
+		},
+		"20_proxyContracts/storage.sol": {
+			"keccak256": "0xd61c5bf8d2a103302a49e1ea298ede72c247088e12bc3c686f5ce3c5d61af3aa",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c8e6bba1ad74fd8a8bf4532831a55fac4bb09ce3e4c11049fa66901d67a90f23",
+				"dweb:/ipfs/QmbbXKCpYsxy7HzeEWux573opdfje84qq3LYEhn6Qk7oDq"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"20_proxyContracts/storage.sol": "Storage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"20_proxyContracts/storage.sol": {
+			"keccak256": "0xd61c5bf8d2a103302a49e1ea298ede72c247088e12bc3c686f5ce3c5d61af3aa",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c8e6bba1ad74fd8a8bf4532831a55fac4bb09ce3e4c11049fa66901d67a90f23",
+				"dweb:/ipfs/QmbbXKCpYsxy7HzeEWux573opdfje84qq3LYEhn6Qk7oDq"
+			]
+		}
+	},
+	"version": 1
+}
