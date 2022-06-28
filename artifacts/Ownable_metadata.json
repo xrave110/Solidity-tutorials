@@ -1,0 +1,50 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"7a_Inheritance_parent.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"7a_Inheritance_parent.sol": {
+			"keccak256": "0xe39885ac403f9c39888f1d21195e1c9ae49d449e5ffaa4d734f2f629c5914d3b",
+			"urls": [
+				"bzz-raw://d139750e9f05764bcf9db006845693185db2b6196fa55a15c2cda7989316fca9",
+				"dweb:/ipfs/QmUgNT2nuyiEctxrukn1Mo8MCCQ2omKAcW7o3LGwDDKaZb"
+			]
+		}
+	},
+	"version": 1
+}

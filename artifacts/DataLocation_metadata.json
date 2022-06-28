@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "getString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"4_DataLocation.sol": "DataLocation"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"4_DataLocation.sol": {
+			"keccak256": "0x83749b2631b8d3887db95dc2bf379bcb61062c7a03b821557b5cd2599eb6785f",
+			"urls": [
+				"bzz-raw://f8657a7d034b02fd582f8053f5e319de15ecbe7f9828f06e99d2d5f18c2b727a",
+				"dweb:/ipfs/QmW9dWE8XDd1Xaj7EKJ7KAovHRBgtwquJeUzNLhx4g2dC4"
+			]
+		}
+	},
+	"version": 1
+}

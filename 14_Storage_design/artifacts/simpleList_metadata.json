@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "entityStructs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEntityCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "entityCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"name": "newEntity",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "entityAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "entityData",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct simpleList.EntityStruct",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "row",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "data",
+						"type": "uint256"
+					}
+				],
+				"name": "updateEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"14_Storage_design/simple_array.sol": "simpleList"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"14_Storage_design/simple_array.sol": {
+			"keccak256": "0x63129341c20b3149f052a2427c3bbfbfaa8af4cbb9c9bd2786c16227f4a4cfa9",
+			"urls": [
+				"bzz-raw://02d25abef7407154d3835d7bdea29b384def2a157063f26f53370e85769e25d6",
+				"dweb:/ipfs/QmbqcSD1fwZPg3zTd8nK3Nfr63xcTycwRK35F6NTNeV1JN"
+			]
+		}
+	},
+	"version": 1
+}

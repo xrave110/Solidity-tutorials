@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					}
+				],
+				"name": "deleteEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "entityStructs",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isEntity",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					}
+				],
+				"name": "isEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isIndeed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"name": "newEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"name": "updateEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"14_Storage_design/simple_mapping.sol": "mappingWithStruct"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"14_Storage_design/simple_mapping.sol": {
+			"keccak256": "0x5848bcf622dcd0a989d9fdeed309538c83b7100531021d31fba4f342564ea026",
+			"urls": [
+				"bzz-raw://bd6a319f8a3b61f0a42663e54272492dda2dba443d9d9efc65857fcb9ffbc1b0",
+				"dweb:/ipfs/QmS8byvWmj7GMW48JJ5YBwhp4Ae5hd5Gt9BUdZCgUxNv4F"
+			]
+		}
+	},
+	"version": 1
+}

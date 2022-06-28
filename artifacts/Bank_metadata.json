@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "depositDone",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipent",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"7a_Inheritance_parent.sol": "Bank"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"7a_Inheritance_parent.sol": {
+			"keccak256": "0xb0d3537b230d41e5b0022af7cf8a6d6d6c500fce0ee3730e8b95ce0cbc042007",
+			"urls": [
+				"bzz-raw://68ab4d4ca362f0ad303613045708f47df1cd7713310de4b60eb17553ac3d295d",
+				"dweb:/ipfs/QmNq3M9WurtpmJo2CNrKNaQZkJnn3Vh8hFBAE5ykvGJmTz"
+			]
+		},
+		"7b_Inheritance_child.sol": {
+			"keccak256": "0x9b0a900708405cf50eb98e1db4b11161b9a2a81cf4d166085a16a40f27317032",
+			"urls": [
+				"bzz-raw://0a129588da7a5af0a2beb098b81b9c456b086a66d0c9ba0de8d6745141fa4300",
+				"dweb:/ipfs/QmZyXoW1u1uTEm9Ss2EcC95jmSoCtBkD7LT9K3Wp3acSCg"
+			]
+		}
+	},
+	"version": 1
+}

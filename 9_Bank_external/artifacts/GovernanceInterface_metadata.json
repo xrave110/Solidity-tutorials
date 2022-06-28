@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addTransaction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"9_Bank_external/Bank.sol": "GovernanceInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"9_Bank_external/Bank.sol": {
+			"keccak256": "0xc37a6de450d4a426897c907fde8771b16069ba7bb0818368bfbab7e9df659739",
+			"urls": [
+				"bzz-raw://c95d7dc708b27a0f5dde948ea3b386c659e648811c68805f951401a99c9ae83a",
+				"dweb:/ipfs/QmeJoZTKdgKCKT1JwcwnujDWV6PQ561yQsnQDHUwQ1ntgr"
+			]
+		},
+		"9_Bank_external/Ownable.sol": {
+			"keccak256": "0x903b5c80881df3651ec62a0d7efef70b7a7c772e101b9c21a31b644913d0aa28",
+			"urls": [
+				"bzz-raw://429e449d4b9868959633f794a856b51c74af9054142f1f756a9852a99b651294",
+				"dweb:/ipfs/QmTiQne3QThGsk8UbXHMWYwwvJv5yixydL4PPuD1p3Pxmu"
+			]
+		}
+	},
+	"version": 1
+}

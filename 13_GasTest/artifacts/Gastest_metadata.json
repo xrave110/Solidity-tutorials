@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[10]",
+						"name": "numbers",
+						"type": "uint256[10]"
+					}
+				],
+				"name": "testExternal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[10]",
+						"name": "numbers",
+						"type": "uint256[10]"
+					}
+				],
+				"name": "testPublic",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GasTest/GasTest.sol": "Gastest"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GasTest/GasTest.sol": {
+			"keccak256": "0xab82471e65114cdf002516c1bbce42ebc3ef385db2066f2d4b17afff42aa2d39",
+			"urls": [
+				"bzz-raw://f2798a884394699aa6b3692eae909fc151d1cebf272b142dbf167117d483132c",
+				"dweb:/ipfs/QmNNV6D4n8BB3Hij96e2WqpLtrX8fnevRTrKkU6d9Gpp5T"
+			]
+		}
+	},
+	"version": 1
+}

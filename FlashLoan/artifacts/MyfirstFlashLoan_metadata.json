@@ -1,0 +1,301 @@
+{
+	"compiler": {
+		"version": "0.5.5+commit.47a71e8f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newamount",
+						"type": "uint256"
+					},
+					{
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "flashLoan",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_assetAddress",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "addressesProvider",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_reserve",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_fee",
+						"type": "uint256"
+					},
+					{
+						"name": "_params",
+						"type": "bytes"
+					}
+				],
+				"name": "executeOperation",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_assetAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "LogWithdraw",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"isOwner()": {
+					"details": "Returns true if the caller is the current owner."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				},
+				"withdraw(address)": {
+					"details": "Withdraw asset.",
+					"params": {
+						"_assetAddress": "Asset to be withdrawn."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FlashLoan/FlashLoan.sol": "MyfirstFlashLoan"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FlashLoan/FlashLoan.sol": {
+			"keccak256": "0xcedef841422bbaae34458abd4f89e31e2b6bd753ebab03c9ae9f16a8217eb71a",
+			"urls": [
+				"bzzr://84e00ff89cb1b421ace9cb651dbaaa81d4d2bd1af97d215cb60b5f6ce250b38f"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/GSN/Context.sol": {
+			"keccak256": "0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061",
+			"urls": [
+				"bzzr://51482c01bddf23793bddee43b60ab9578a62948a4f2082def24ea792a553b055"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzzr://292843005e754e752644f767477ec5ad7a1ffc91ddb18c38b8079c62f3993cad"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/ownership/Ownable.sol": {
+			"keccak256": "0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24",
+			"urls": [
+				"bzzr://ab46c9368bc3abdded5eb85858304518c8a0291060ab42087075d759dbf3925f"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xb15af804e2bc97db51e4e103f13de9fe13f87e6b835d7a88c897966c0e58506e",
+			"urls": [
+				"bzzr://6200c125af376381ae6c5415b8f3c1cb83889be20a7a51d67ac607487a10313b"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9",
+			"urls": [
+				"bzzr://cf2d583b8dce38d0617fdcd65f2fd9f126fe17b7f683b5a515ea9d2762d8b062"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/SafeERC20.sol": {
+			"keccak256": "0x6f2c9955d65c522b80f4b8792f076512d2df947d2112cbc4d98a4781ed42ede2",
+			"urls": [
+				"bzzr://d2ff5aadcb697bc27ca3b0f6c40b4998e8cf0a1bd0f761d1df6d5981777841ae"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/utils/Address.sol": {
+			"keccak256": "0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11",
+			"urls": [
+				"bzzr://4e1d23731da27602b8c552e54fb9976dadf8cf46a8f90a3c8c1b85fe044618b9"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/aave/EthAddressLib.sol": {
+			"keccak256": "0xca890f92deae551d0981d401b5fa0a8e66c962ca04ad55da0aa6bd84d1731468",
+			"urls": [
+				"bzzr://84b8e7ae5399741490c7e61d7d5a3c23c4209199c07f78c240db57a730377a48"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/aave/FlashLoanReceiverBase.sol": {
+			"keccak256": "0xe17f9e1ddaf7ee794e26ba9a8c41608be00e88948fcd9be03df04abbf1c173a8",
+			"urls": [
+				"bzzr://364a8a084fd08bd3dbc3688bb22c1774bf03c89c8194e6e054c5b5541a5a8898"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/aave/IFlashLoanReceiver.sol": {
+			"keccak256": "0xe5d0f7c5c0d749bfa4253025d5b125a2094981e8190c64c8700edaa26e9942b8",
+			"urls": [
+				"bzzr://ef3a33591244fc28f94ba7816f33c7e2e7b04c014fb38f926c24a7a94cace71d"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/aave/ILendingPool.sol": {
+			"keccak256": "0x1f47ef46d14f97d79503efa31b3357b94cecc6667aecda2b76c6f85721820d2d",
+			"urls": [
+				"bzzr://3e5955b283c6d95fb0b0d52938eb5bdab2c4432764da58fcf2477425066f5f19"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/aave/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0x069805c0a3433470480f865c1848c324542c6efe15507732eaf3b3f765d892f0",
+			"urls": [
+				"bzzr://a49ab7077af0572c689cd9016a26098bcfcde91f757d4c84d5c6b24973b665a8"
+			]
+		},
+		"https://github.com/mrdavey/ez-flashloan/blob/remix/contracts/utils/Withdrawable.sol": {
+			"keccak256": "0xb7624d356f9e13f6bd63f38eacae65c9f54fab8a34ae1978644cd6b8090f5c97",
+			"urls": [
+				"bzzr://26a1566bdcebedcb3ddd7d55ecd91d81c3521d3083505ef4885dc14010d3ed83"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "start",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"15_Security_external/attack.sol": "attack"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"15_Security_external/attack.sol": {
+			"keccak256": "0x4668d8d27e1a4abd7654ee60770631ab2ce7722240c492b73aaed54d9a9b9904",
+			"urls": [
+				"bzz-raw://051af857cf75eb2aaa8a67c76dbfc0a80bff501d044c2ea4d0cebfcfe3e215ac",
+				"dweb:/ipfs/QmYEykVVgmKW4yTRVS5irew67DXSkZUm6p2iEKogVV4Jcc"
+			]
+		}
+	},
+	"version": 1
+}

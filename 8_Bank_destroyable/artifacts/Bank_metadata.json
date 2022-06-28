@@ -1,0 +1,166 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "depositDone",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipent",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"A_Bank_FUll/Bank.sol": "Bank"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"A_Bank_FUll/Bank.sol": {
+			"keccak256": "0xe93b6562bb529d359438d3225affb391f34eca59c0b29475b89110453c0ffc0b",
+			"urls": [
+				"bzz-raw://e69d707bd41ffffb8ba1cc5a4e5539d502aa60b019de85d04d8e36a4f02d5fa6",
+				"dweb:/ipfs/QmRW83iGW9Yv7AvkDGRuDdrHBCczfkNVAsMYpwTokooXuZ"
+			]
+		},
+		"A_Bank_FUll/Destroyable.sol": {
+			"keccak256": "0x60a6f5dccb29c59a799ed299ed679977f1fa2f4bb5a9f37770c1ba9bdd331c18",
+			"urls": [
+				"bzz-raw://2a7ee90a0f9fce6f2eb73ea2c8e903d7d7e8ea8733951c163879d7449ca800a1",
+				"dweb:/ipfs/QmPUvP6hBRp6UNhBKJWF4kgj8J8xKR8Lw6TSiWeh6sjiRZ"
+			]
+		},
+		"A_Bank_FUll/Ownable.sol": {
+			"keccak256": "0x903b5c80881df3651ec62a0d7efef70b7a7c772e101b9c21a31b644913d0aa28",
+			"urls": [
+				"bzz-raw://429e449d4b9868959633f794a856b51c74af9054142f1f756a9852a99b651294",
+				"dweb:/ipfs/QmTiQne3QThGsk8UbXHMWYwwvJv5yixydL4PPuD1p3Pxmu"
+			]
+		}
+	},
+	"version": 1
+}

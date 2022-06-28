@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"9_Bank_external/Ownable.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"9_Bank_external/Ownable.sol": {
+			"keccak256": "0x903b5c80881df3651ec62a0d7efef70b7a7c772e101b9c21a31b644913d0aa28",
+			"urls": [
+				"bzz-raw://429e449d4b9868959633f794a856b51c74af9054142f1f756a9852a99b651294",
+				"dweb:/ipfs/QmTiQne3QThGsk8UbXHMWYwwvJv5yixydL4PPuD1p3Pxmu"
+			]
+		}
+	},
+	"version": 1
+}

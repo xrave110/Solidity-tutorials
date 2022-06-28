@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					}
+				],
+				"name": "deleteEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "entityList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "entityStructs",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "listPointer",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEntityCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "entityCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					}
+				],
+				"name": "isEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isIndeed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"name": "newEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entityAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "entityData",
+						"type": "uint256"
+					}
+				],
+				"name": "updateEntity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"14_Storage_design/mapping_w_index_and_delete.sol": "mappedWithUnorderedIndexAndDelete"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"14_Storage_design/mapping_w_index_and_delete.sol": {
+			"keccak256": "0x2c8e685f3cd88b48e9dafe8c6732ca427e865b32c3761dbc343be066224c7e27",
+			"urls": [
+				"bzz-raw://4a6d10eb6d4747cf0de85ae7e145d2a6f33f52b7b7fd5b1e7a661e51f136151c",
+				"dweb:/ipfs/QmQvB7ewfiSLCd3NNz6foy4Nj94857V3AymPy4bHGbiv4n"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "memoryArray",
+						"type": "uint256[]"
+					}
+				],
+				"name": "f",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"12_CopyVsReference/C.sol": "C"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"12_CopyVsReference/C.sol": {
+			"keccak256": "0x39a1be46a57f64917fe39a5812f577f6068583de4657347bd5b995cf06984cb0",
+			"urls": [
+				"bzz-raw://9c12bff2ce6add75bb2d973efacfd3d06bb7584a5e487f2050f15dab6ac55f97",
+				"dweb:/ipfs/QmWg42p3scveLeS4JhgqM9DbTr6TRWvKUuydjh51yRMAqg"
+			]
+		}
+	},
+	"version": 1
+}
