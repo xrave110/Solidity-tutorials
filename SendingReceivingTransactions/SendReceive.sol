@@ -18,22 +18,39 @@ receive() exists?  fallback()
     receive()   fallback()
     */
     event Log(string message);
+    event Gas(uint gas);
+    event Received(address caller, uint amount, string message);
     // Function to receive Ether. msg.data must be empty
     receive() external payable {
+        // send / transfer (forwards 2300 gas to this fallback function)
+        // call (forwards all of the gas)
         emit Log("I am in receive function!");
+        //To much gas is required to suceed with send and transfer
+        //emit Gas(gasleft());
+        //emit Received(msg.sender, msg.value, "");
     }
 
     // Fallback function is called when msg.data is not empty
     fallback() external payable {
         emit Log("I am in fallback function!");
+        emit Gas(gasleft());
+        emit Received(msg.sender, msg.value, "");
     }
 
     function getBalance() public view returns (uint) {
         return address(this).balance;
     }
+    
+    function foo(string memory _message, uint _x) public payable returns (uint) {
+        emit Received(msg.sender, msg.value, _message);
+
+        return _x + 1;
+    }
 }
 
 contract SendEther {
+    event Response(bool success, bytes data);
+
     function sendViaTransfer(address payable _to) public payable {
         // This function is no longer recommended for sending Ether.
         _to.transfer(msg.value);
@@ -58,6 +75,26 @@ contract SendEther {
         (bool sent, bytes memory data) = _to.call{value: msg.value}(bytes("Not empty"));
         require(sent, "Failed to send Ether");
         return data;
+    }
+
+    // Let's imagine that contract B does not have the source code for
+    // contract A, but we do know the address of A and the function to call.
+    function testCallFoo(address payable _addr) public payable {
+        // You can send ether and specify a custom gas amount
+        (bool success, bytes memory data) = _addr.call{value: msg.value, gas: 5000}(
+            abi.encodeWithSignature("foo(string,uint256)", "call foo", 123)
+        );
+
+        emit Response(success, data);
+    }
+
+    // Calling a function that does not exist triggers the fallback function.
+    function testCallDoesNotExist(address _addr) public {
+        (bool success, bytes memory data) = _addr.call(
+            abi.encodeWithSignature("doesNotExist()")
+        );
+
+        emit Response(success, data);
     }
 
 
