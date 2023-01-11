@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.7;
 
 contract Encoding{
 
@@ -24,7 +24,9 @@ contract Encoding{
     }
 
     function decodeString() public pure returns(string memory){
-        string memory someString = abi.decode(encodeString(), (string));
+        bytes memory valueToEncode = new bytes(1);
+        valueToEncode[0] = 0x05;
+        string memory someString = abi.decode(valueToEncode, (string));
         return someString;
     }
 
@@ -51,4 +53,18 @@ contract Encoding{
         return someString;
     }
 
+    function multiEncodeNr() public pure returns(bytes memory){
+        bytes memory someNr = abi.encode(100,200);
+        return someNr;
+    }
+
+    function encodeNr() public pure returns(bytes memory){
+        bytes memory someNr = abi.encode(1);
+        return someNr;
+    }
+
+    function multiDecodeNr() public pure returns(uint256, uint256){
+        (uint256 someNr, uint256 someOtherNr) = abi.decode(multiEncodeNr(), (uint256, uint256));
+        return (someNr, someOtherNr);
+    }
 }

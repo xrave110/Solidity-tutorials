@@ -20,6 +20,7 @@ receive() exists?  fallback()
     event Log(string message);
     event Gas(uint gas);
     event Received(address caller, uint amount, string message);
+    uint256 public cntr;
     // Function to receive Ether. msg.data must be empty
     receive() external payable {
         // send / transfer (forwards 2300 gas to this fallback function)
@@ -43,7 +44,7 @@ receive() exists?  fallback()
     
     function foo(string memory _message, uint _x) public payable returns (uint) {
         emit Received(msg.sender, msg.value, _message);
-
+        cntr += _x;
         return _x + 1;
     }
 }
@@ -82,10 +83,14 @@ contract SendEther {
     function testCallFoo(address payable _addr) public payable {
         // You can send ether and specify a custom gas amount
         (bool success, bytes memory data) = _addr.call{value: msg.value, gas: 5000}(
-            abi.encodeWithSignature("foo(string,uint256)", "call foo", 123)
+            abi.encodeWithSelector(getSelectorOne(), "call foo", 123)
         );
 
         emit Response(success, data);
+    }
+
+    function getSelectorOne() public pure returns(bytes4 selector){
+        selector = bytes4(keccak256(bytes("foo(string,uint256)")));
     }
 
     // Calling a function that does not exist triggers the fallback function.
@@ -96,6 +101,5 @@ contract SendEther {
 
         emit Response(success, data);
     }
-
 
 }
